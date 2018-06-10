@@ -16,18 +16,19 @@ public class Calculator {
     public Calculator(){
 
     }
-    int addNumbers(int firstNumber, int secountNumber){
-        return firstNumber+secountNumber;
+    int addNumbers(int firstNumber, int secondNumber){
+        return firstNumber+secondNumber;
     }
 
-    int substractNumbers(int firstNumber, int secountNumber){
-        return firstNumber-secountNumber;
+    int substractNumbers(int firstNumber, int secondNumber){
+        return firstNumber-secondNumber;
     }
-    int multiplyNumbers(int firstNumber, int secountNumber){
-        return firstNumber*secountNumber;
+    int multiplyNumbers(int firstNumber, int secondNumber){
+        return firstNumber*secondNumber;
     }
-    int divideNumbers(int firstNumber, int secountNumber){
-        return firstNumber/secountNumber;
+    int divideNumbers(int firstNumber, int secondNumber){
+        if (secondNumber==0) throw new RuntimeException("Dividing by Zero is undefined. ( ͡° ͜ʖ ͡°) ");
+        return firstNumber/secondNumber;
     }
 
     boolean isEvenNumber(int number){
